@@ -1,0 +1,6 @@
+E:\dev\scode-cource\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+E:\dev\scode-cource\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+E:\dev\scode-cource\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojAssemblyReference.cache
+E:\dev\scode-cource\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.CoreCompileInputs.cache
+E:\dev\scode-cource\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+E:\dev\scode-cource\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
