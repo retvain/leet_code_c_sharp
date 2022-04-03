@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ConsoleApplication1.LeetCode
 {
@@ -30,7 +31,7 @@ namespace ConsoleApplication1.LeetCode
         {
             int[] result = new int[2];
 
-            for (int i = 0; i < sourceArr.Length; i++)
+            for (int i = 0; i < sourceArr.Length-1; i++)
             {
                 if (sourceArr[i] + sourceArr[i + 1] == number)
                 {
@@ -39,7 +40,11 @@ namespace ConsoleApplication1.LeetCode
             }
 
             // delete first key from array
-            var tmpList = new List(sourceArr);
+            var tmpList = new List<int>(sourceArr); // convert to list
+            tmpList.RemoveAt(0); // remove first element
+            sourceArr = tmpList.ToArray(); // convert back to array
+
+            return sourceArr;
         }
     }
 }
