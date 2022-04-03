@@ -1,13 +1,14 @@
-﻿using System;
+﻿
+using ConsoleApplication1.LeetCode;
 
 namespace ConsoleApplication1
 {
-    internal class Program
+    internal class Program 
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
-            Console.WriteLine("Привет, мир!!!");
+            // two-sum LeetCode
+            TwoSum.Handle();
         }
     }
 }
