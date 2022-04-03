@@ -20,15 +20,25 @@ namespace ConsoleApplication1.LeetCode
             Console.WriteLine("Insert sum");
             var number = Convert.ToInt32(Console.ReadLine());
 
-            var result = GetIndexes(arr, number);
+            var result = GetIndexes<Array>(arr, number);
+            var fail = GetIndexes<string>(arr, number);
 
             // get result
             Console.WriteLine("massive keys");
-            Console.WriteLine("[{0}]", string.Join(", ", result));
+            if (result.GetType() == typeof(Array))
+            {
+                Console.WriteLine("[{0}]", string.Join(", ", result));    
+            }
+            
         }
 
-        private static int[] GetIndexes(int[] sourceArr, int number)
+        private static dynamic GetIndexes<T>(int[] sourceArr, int number)
         {
+            if (sourceArr.Length < 2)
+            { 
+                return "keys not found";
+            }
+            
             int[] result = new int[2];
 
             for (int i = 0; i < sourceArr.Length-1; i++)
@@ -44,7 +54,7 @@ namespace ConsoleApplication1.LeetCode
             tmpList.RemoveAt(0); // remove first element
             sourceArr = tmpList.ToArray(); // convert back to array
 
-            return sourceArr;
+            GetIndexes<Array>(sourceArr, number);
         }
     }
 }
