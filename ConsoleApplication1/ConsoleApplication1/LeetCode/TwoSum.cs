@@ -27,21 +27,20 @@ namespace ConsoleApplication1.LeetCode
             Console.WriteLine("massive keys");
             if (result.GetType() == typeof(Array))
             {
-                Console.WriteLine("[{0}]", string.Join(", ", result));    
+                Console.WriteLine("[{0}]", string.Join(", ", result));
             }
-            
         }
 
         private static dynamic GetIndexes<T>(int[] sourceArr, int number)
         {
             if (sourceArr.Length < 2)
-            { 
+            {
                 return "keys not found";
             }
-            
+
             int[] result = new int[2];
 
-            for (int i = 0; i < sourceArr.Length-1; i++)
+            for (int i = 0; i < sourceArr.Length - 1; i++)
             {
                 if (sourceArr[i] + sourceArr[i + 1] == number)
                 {
